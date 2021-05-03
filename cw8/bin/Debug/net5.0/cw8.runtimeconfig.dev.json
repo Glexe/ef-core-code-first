@@ -1,0 +1,9 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\glpvn\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\glpvn\\.nuget\\packages",
+      "D:\\Soft\\VisualStudio\\tools\\NuGetPackages"
+    ]
+  }
+}

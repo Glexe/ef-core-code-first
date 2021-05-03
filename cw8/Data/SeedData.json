@@ -1,0 +1,91 @@
+{
+    "names": [
+        "Emma",
+        "Ava",
+        "Sophia",
+        "Amelia",
+        "Mia",
+        "Liam",
+        "Noah",
+        "Oliver",
+        "William",
+        "Elijah",
+    ],
+    "lastNames": [
+        "Smith",
+        "Johnson",
+        "Williams",
+        "Brown",
+        "Jones",
+        "Garcia",
+        "Miller",
+        "Davis"
+    ],
+    "medicamentNames": [
+        "superDuperPill",
+        "Acetaminophen",
+        "Adderall",
+        "Amitriptyline",
+        "Amlodipine",
+        "Amoxicillin",
+        "Ativan",
+        "Atorvastatin",
+        "Azithromycin"
+    ],
+
+    "medicamentDescriptions": [
+        "heals any disease"
+    ],
+    "medicamentTypes": [
+        "pill",
+        "liquid",
+        "drops"
+    ],
+    "emails": [
+        "goodDoctor@goodDomain.com",
+        "shang@yahoo.ca",
+        "emcleod@verizon.net",
+        "elmer@aol.com",
+        "mccurley@me.com",
+        "stevelim@yahoo.ca",
+        "jdhedden@hotmail.com",
+        "yamla@icloud.com",
+        "rohitm@sbcglobal.net",
+        "mhassel@icloud.com",
+        "mavilar@hotmail.com",
+        "emmanuel@outlook.com",
+        "cliffski@sbcglobal.net"
+    ],
+    "medicamentDetails": [
+        "od may cause tail grow"
+    ],
+    "medicamentDoses": [
+        1,2,3,4,5
+    ],
+    "dates": [
+        "6/13/1996",
+        "2/11/1997",
+        "7/31/1999",
+        "10/16/1999",
+        "3/21/2003",
+        "3/21/1992",
+        "6/25/1992",
+        "9/27/1992",
+        "6/10/1994",
+        "7/11/1995",
+        "5/8/1996",
+        "7/31/1996",
+        "12/10/1996",
+        "5/17/1997",
+        "8/2/1997",
+        "7/29/2001",
+        "12/10/2001",
+        "5/15/2003",
+        "10/6/2003",
+        "12/29/2003",
+        "9/26/2004",
+        "2/24/2006",
+        "6/9/2009",
+        "8/19/2009"
+    ]
+}
