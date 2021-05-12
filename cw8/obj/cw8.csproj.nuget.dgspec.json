@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Git\\cwiczenia8_pgago-s21057\\cw8\\cw8.csproj": {}
+    "D:\\Git\\cwiczenia9_pgago-s21057\\cw8\\cw8.csproj": {}
   },
   "projects": {
-    "D:\\Git\\cwiczenia8_pgago-s21057\\cw8\\cw8.csproj": {
+    "D:\\Git\\cwiczenia9_pgago-s21057\\cw8\\cw8.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Git\\cwiczenia8_pgago-s21057\\cw8\\cw8.csproj",
+        "projectUniqueName": "D:\\Git\\cwiczenia9_pgago-s21057\\cw8\\cw8.csproj",
         "projectName": "cw8",
-        "projectPath": "D:\\Git\\cwiczenia8_pgago-s21057\\cw8\\cw8.csproj",
+        "projectPath": "D:\\Git\\cwiczenia9_pgago-s21057\\cw8\\cw8.csproj",
         "packagesPath": "C:\\Users\\glpvn\\.nuget\\packages\\",
-        "outputPath": "D:\\Git\\cwiczenia8_pgago-s21057\\cw8\\obj\\",
+        "outputPath": "D:\\Git\\cwiczenia9_pgago-s21057\\cw8\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "D:\\Soft\\VisualStudio\\tools\\NuGetPackages"
@@ -44,6 +44,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[5.0.5, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.5, )"

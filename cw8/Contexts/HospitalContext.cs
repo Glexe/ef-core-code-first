@@ -7,6 +7,7 @@ namespace cw8.Contexts
 {
     public class HospitalContext : DbContext
     {
+        public DbSet<User> Users { get; set; }
         public DbSet<Prescription> Prescriptions { get; set; }
         public DbSet<Patient> Patients { get; set; }
         public DbSet<Doctor> Doctors { get; set; }
@@ -27,6 +28,7 @@ namespace cw8.Contexts
             modelBuilder.ApplyConfiguration(new PatientConfiguration());
             modelBuilder.ApplyConfiguration(new Prescription_MedicamentConfiguration());
             modelBuilder.ApplyConfiguration(new MedicamentConfiguration());
+            modelBuilder.ApplyConfiguration(new UserConfiguration());
         }
 
         public void SeedDb(uint numOfRecordsToAdd)
@@ -55,8 +57,6 @@ namespace cw8.Contexts
                     LastName = rand(data.LastNames),
                     BirthDate = birthdate
                 };
-                int docId = Set<Doctor>().Add(doctor).Entity.DoctorID;
-                int patId = Set<Patient>().Add(patient).Entity.PatientID;
 
                 var medicament = new Medicament
                 {
@@ -64,7 +64,6 @@ namespace cw8.Contexts
                     Description = rand(data.MedicamentDescriptions),
                     Type = rand(data.MedicamentTypes)
                 };
-                int medId = Set<Medicament>().Add(medicament).Entity.MedicamentID;
 
                 var date = birthdate.AddYears(random.Next(17, 45));
                 var prescription = new Prescription
@@ -74,7 +73,6 @@ namespace cw8.Contexts
                     IdPatientNavigation = patient,
                     IdDoctorNavigation = doctor
                 };
-                int prescriptionId = Set<Prescription>().Add(prescription).Entity.PrescriptionID;
 
                 Set<Prescription_Medicament>().Add(new Prescription_Medicament
                 {

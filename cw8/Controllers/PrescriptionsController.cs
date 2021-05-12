@@ -7,9 +7,11 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using cw8.Contexts;
 using cw8.Models;
+using Microsoft.AspNetCore.Authorization;
 
 namespace cw8.Controllers
 {
+    [Authorize]
     [Route("api/prescriptions")]
     [ApiController]
     public class PrescriptionsController : ControllerBase

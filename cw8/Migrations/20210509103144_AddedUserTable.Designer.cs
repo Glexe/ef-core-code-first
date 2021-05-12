@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using cw8.Contexts;
 
 namespace cw8.Migrations
 {
     [DbContext(typeof(HospitalContext))]
-    partial class HospitalContextModelSnapshot : ModelSnapshot
+    [Migration("20210509103144_AddedUserTable")]
+    partial class AddedUserTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -174,21 +176,10 @@ namespace cw8.Migrations
                         .HasMaxLength(200)
                         .HasColumnType("varbinary(200)");
 
-                    b.Property<byte[]>("RefreshToken")
-                        .HasColumnType("varbinary(max)");
-
-                    b.Property<DateTime>("RefreshTokenExpirationDate")
-                        .HasColumnType("datetime2");
-
                     b.Property<byte[]>("Salt")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("varbinary(200)");
-
-                    b.Property<string>("UserRole")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("nvarchar(200)");
 
                     b.HasKey("UserID")
                         .HasName("User_PK");

@@ -6,9 +6,11 @@ using Microsoft.EntityFrameworkCore;
 using cw8.Contexts;
 using cw8.Models;
 using System;
+using Microsoft.AspNetCore.Authorization;
 
 namespace cw8.Controllers
 {
+    [Authorize]
     [Route("api/doctors")]
     [ApiController]
     public class DoctorsController : ControllerBase
@@ -84,6 +86,7 @@ namespace cw8.Controllers
         [HttpDelete("{id}")]
         public async Task<IActionResult> DeleteDoctor(int id)
         {
+            if (!User.Claims.Any(c => c.Value == "Admin")) return StatusCode(401);
             var doctor = await _context.Doctors.FindAsync(id);
             if (doctor == null)
             {
